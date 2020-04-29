@@ -43,6 +43,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 ```
 
 
+
 ### Configure the nodes for Kafka Connect in Distributed mode
 
 
@@ -66,6 +67,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 ```
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --replication-factor 3 --partitions 8 --topic twitterstatus --zookeeper $KAFKAZKHOSTS
 ```
+
 
 ### Deploy the Kafka Connect Plugins
 
@@ -97,6 +99,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 
  > Note: **The below steps needs to be repeated for both ed10 and ed12 edge nodes**
 
+
 #### Configure Kafka Connect 
 
  - To run Kafka Connect in **distributed mode** one needs to look at two important files. 
@@ -120,7 +123,8 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 - In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state. Uncomment and modify the parameters in `connect-distributed.properties`  file as shown below. Note that we use some of the topics we created earlier. 
 
 ```
-bootstrap.servers=<Enter the full contents of $KAFKABROKERS>
+bootstrap.servers=<Enter $KAFKABROKERS Name>
+
 group.id=agconnect-cluster
 
 key.converter=org.apache.kafka.connect.json.JsonConverter
