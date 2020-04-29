@@ -1,12 +1,14 @@
 # Kafka Connect with HDInsight Managed Kafka 
 
 
-### Kafka Connect
-In a normal Kafka cluster a producer application produces a message and publishes it to Kafka and a consumer application consumes the message from Kafka. 
+###### Kafka Cluster #######
+Kafka clusters architecture are based on pub/sub ie: publisher/consumer where producer application produces messages 
+and and consumer application consumes the message from Kafka. Application developer's are responsible to ensure 
+reliable and fault tolerant of producer and consumers.
 
-In these circumstances it is the application developer's responsibility to ensure that the producer and consumers are reliable and fault tolerant. 
 
-**Kafka Connect is a framework for connecting Kafka with external systems**  such as databases, storage systems, applications , search indexes, and file systems, using so-called  _Connectors_, in a reliable and fault tolerant way.
+**What is Kafka Connect? 
+Kafka Connect is an EdgeNode Clouster ; which connects EdgeNode Clusters to Kafka Cluster and external systems such as databases, storage systems, applications , search indexes, and file systems, using so-called  _Connectors_, in a reliable and fault tolerant way.
 
 **Kafka Connectors are ready-to-use components, which can help import data from external systems into Kafka topics and export data from Kafka topics into external systems**. Existing connector implementations are normally available for common data sources and sinks with the option of creating ones own connector.
 
