@@ -1,17 +1,17 @@
 # Kafka Connect with HDInsight Managed Kafka 
 
 
-###### Kafka Cluster #######
+### Kafka Cluster ###
 
-Kafka clusters architecture are based on pub/sub ie: publisher/consumer where producer application produces messages 
-and and consumer application consumes the message from Kafka. Application developer's are responsible to ensure 
-reliable and fault tolerant of producer and consumers.
+Kafka clusters architecture are based on pub/sub ie: publisher/consumer model ; where producer application generates/produces messages/events and consumer application receives/consumes those messages/events. Application developer's are responsible to ensure 
+reliable and fault tolerant of producers and consumers.
 
 
-**** What is Kafka Connect?********
-Kafka Connect is an EdgeNode Clouster ; which connects EdgeNode Clusters to Kafka Cluster and external systems such as databases, storage systems, applications , search indexes, and file systems, using so-called  _Connectors_, in a reliable and fault tolerant way.
+### What is Kafka Connect? ### 
+Kafka Connect is an EdgeNode Clouster; which connects to Kafka Cluster and external systems such as databases, storage systems, applications , search indexes, and file systems, using so-called  _Connectors_, in a reliable and fault tolerant way.
 
-**Kafka Connectors are ready-to-use components, which can help import data from external systems into Kafka topics and export data from Kafka topics into external systems**. Existing connector implementations are normally available for common data sources and sinks with the option of creating ones own connector.
+### What are Kafka Connectors ? ###
+They are ready-to-use components which can help import data from external systems into Kafka topics and export data from Kafka topics into external systems. Existing connector implementations are normally available for common data sources and sinks with the option of creating ones own connector.
 
 A  _source connector_ collects data from a system. Source systems can be entire databases, applications or message brokers. A source connector could also collect metrics from application servers into Kafka topics, making the data available for stream processing with low latency.
 
@@ -36,7 +36,7 @@ Every connector spawns **tasks** which are then distributed across workers in th
 
 #### Standalone Mode 
 - A single edge node on the HDInsight cluster will used to demonstrate  Kafka Connect in standalone mode. 
-- Click to **[Start Lab on Kafka Connect in standalone mode](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsightManagedKafkastandalone.md)**
+- Click to **[Start Lab on Kafka Connect in standalone mode](https://github.com/arnabganguly/archanamehta/blob/master/HDInsightManagedKafkastandalone.md)**
 
 #### Distributed Mode 
 -  Two edge nodes on an HDInsight cluster will be used to demonstrate  Kafka Connect in distributed mode. 
@@ -45,7 +45,7 @@ Every connector spawns **tasks** which are then distributed across workers in th
 
 - Since the number of edge nodes can be scaled up or down on an existing cluster , this functionality can be used to scale the size of the Kafka Connect cluster as well.
 
--  Click to **[Start Lab on Kafka Connect in distributed mode](https://github.com/arnabganguly/Kafkaconnect/blob/master/HDInsightManagedKafkadistributed.md)** 
+-  Click to **[Start Lab on Kafka Connect in distributed mode](https://github.com/archanamehta/Kafkaconnect/blob/master/HDInsightManagedKafkadistributed.md)** 
 
 
 
