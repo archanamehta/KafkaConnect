@@ -28,13 +28,13 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
 
 - Wait till the deployment completes and you get the *Your Deployment is Complete* message and then click on  **Go to resource**.
 
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic3.png)
+![HDInsight Kafka Schema Registry](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic3.png)
 
 
 
 - On the Resource group explore the various components created as part of the Deployment . Click on the HDInsight Cluster to open the cluster page. 
 
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic5.png)
+![HDInsight Kafka Schema Registry](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic5.png)
 
 - Log into Ambari from the cluster page to get the Hostnames(FQDN) of the edge nodes . They should appear in the below format 
 
@@ -43,15 +43,15 @@ ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.net
 ```
 
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic6.png)
+![HDInsight Kafka Schema Registry](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic6.png)
 
 
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic7.png)
+![HDInsight Kafka Schema Registry](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic7.png)
 
 
 - On the HDInsight cluster page click on the SSH+Cluster login blade on the left and get the hostname of the edge node that was deployed. 
 
-![HDInsight Kafka Schema Registry](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic10.png)
+![HDInsight Kafka Schema Registry](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic10.png)
 
 
 - Using an SSH client of your choice ssh into the edge node using the **sshuser** and **password** that you set in the custom ARM script. You will notice that you have logged into edge node ``ed10``
@@ -63,7 +63,7 @@ sshuser@ed10-ag4kac:~$ ssh ed12-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cl
 ```
 - In the next sections we would configure the Kafka Connect  distributed on both the edge nodes.  
 
-Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed1.md)  
+Click  [Next ->](https://github.com/archanamehta/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed1.md)  
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE2OTM3MDc3ODRdfQ==
 -->
