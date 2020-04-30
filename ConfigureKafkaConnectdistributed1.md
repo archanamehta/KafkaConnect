@@ -76,7 +76,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
      - [Azure Blob Storage Sink Connector](https://www.confluent.io/hub/confluentinc/kafka-connect-azure-blob-storage)
 - Unzip the files to create the folder structures
 
-     ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic9.png)
+     ![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic9.png)
      
      <br />
      <br />
@@ -89,10 +89,10 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
      ``` 
 - Using WINSCP or any other SCP tool of your choice upload the Kafka Connect Plugins into folder path created in the last step
 
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic11.png)
+![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic11.png)
 
 
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic12.png)
+![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic12.png)
 
 - Transfer the files to ed12 using the below command. Make sure that folders have the right permissions for this operation.  
 ```rsync -r /usr/hdp/current/kafka-broker/connectors/ sshuser@<edge-node12-FQDN>:/usr/hdp/current/kafka-broker/connectors/```
@@ -183,13 +183,13 @@ curl -s http://<edge-node-FQDN>:8083/ |jq
 }
  ```
  
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic14.png)
+![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic14.png)
  - In this section we started **Kafka Connect in distributed mode** alongside an HDInsight cluster and verified it using the Kafka REST API. 
 
  
  - In the next section we would use Kafka REST API's to start separate connector instances for running **Source Tasks** and **Sink Tasks**.
  
-   Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
+   Click  [Next ->](https://github.com/archanamehta/Kafkaconnect/blob/master/ConfigureKafkaConnectdistributed2.md)
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMjEzMDk5MjIxOSwxNTM5NzM1NTE1LC0xNT
