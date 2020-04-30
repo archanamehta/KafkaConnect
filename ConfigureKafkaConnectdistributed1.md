@@ -123,7 +123,7 @@ wn1-kafka.eahjefyeyyeyeyygqj5y1ud.cx.internal.cloudapp.net:9092,wn0-kafka.eaeyhd
 - In the  `connect-distributed.properties`  file, define the topics that will store the connector state, task configuration state, and connector offset state. Uncomment and modify the parameters in `connect-distributed.properties`  file as shown below. Note that we use some of the topics we created earlier. 
 
 ```
-bootstrap.servers=<Enter $KAFKABROKERS Name>
+bootstrap.servers=<Enter all Names of $KAFKABROKERS example: wn0-archie.gqff3nvamhbu1i31jfvo34tv3f.bx.internal.cloudapp.net:9092>
 
 group.id=agconnect-cluster
 
@@ -149,6 +149,7 @@ offset.flush.interval.ms=10000
 rest.port=8083
 
 plugin.path=/usr/hdp/current/kafka-broker/connectors/jcustenborder-kafka-connect-twitter-0.3.33,/usr/hdp/current/kafka-broker/connectors/confluentinc-kafka-connect-azure-blob-storage-1.3.2
+
 ```
 
 - Start Kafka Connect in distributed mode in the background on the Edge Node . 
