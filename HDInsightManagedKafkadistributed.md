@@ -23,8 +23,8 @@ In this section we would deploy an HDInsight Managed Kafka  cluster with two Edg
     - **SSH Password**: Create an SSH password for the username chosen above
 
 - Check he box titled "*I agree to the terms and conditions stated above*" and click on **Purchase**. 
-    
-![HDInsight Kafka Schema Registry]()
+
+
 
 - Wait till the deployment completes and you get the *Your Deployment is Complete* message and then click on  **Go to resource**.
 
