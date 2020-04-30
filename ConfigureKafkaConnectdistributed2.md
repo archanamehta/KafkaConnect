@@ -14,7 +14,7 @@ twitter.oauth.consumerSecret
 twitter.oauth.accessToken
 twitter.oauth.accessTokenSecret
 ```
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic25.png)
+![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic25.png)
 
 
 
@@ -44,7 +44,7 @@ BODY
 ```
 - If the connector is created , you will see a notification like below.
 
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic15.png)
+![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic15.png)
 
 - Use the Kafka REST API to check if the connector `Twitter-to-Kafka`was created 
 
@@ -53,7 +53,7 @@ curl -X GET http://ed10-ag4kac.ohdqdgkr0bpe3kjx3dteggje4c.gx.internal.cloudapp.n
 ["local-file-source","Twitter-to-Kafka"]
 ```
 
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic16.png)
+![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic16.png)
 
 
 - One way to test if Twitter Messages with the keywords are being ingested is to start a console consumer in a different session and start consuming messages from the topic *twitterstatus* . 
@@ -102,7 +102,7 @@ BODY
 ```
 - If the connector is created  , you will see a notification like below.
 
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic17.png)
+![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic17.png)
 
 
 - Use the Kafka REST API to check if the connector `Kafka-to-Blob`was created. You should see both the source and sink connectors.  
@@ -112,18 +112,18 @@ curl -X GET http://<edge-node-FQDN>:8083/connectors
 ["local-file-source","Twitter-to-Kafka","Kafka-to-Blob"]
 ```
 
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic18.png)
+![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic18.png)
 
 - Authenticate into your Azure portal and navigate to the storage account to validate if Twitter Messages are being sent to the specific container. 
 
-![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic19.png)
+![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic19.png)
 
- ![HDInsight Kafka Connect](https://github.com/arnabganguly/Kafkaconnect/blob/master/images/pic20.png)
+ ![HDInsight Kafka Connect](https://github.com/archanamehta/Kafkaconnect/blob/master/images/pic20.png)
 
 
 - In this section we saw how the source and sink connectors were created . In the next section , we will explore some Kafka REST API's to control Kafka Connect.  
 
-Click  [Next ->](https://github.com/arnabganguly/Kafkaconnect/blob/master/KafkaRESTAPI.md)  
+Click  [Next ->](https://github.com/archanamehta/Kafkaconnect/blob/master/KafkaRESTAPI.md)  
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbMTAzOTE0MDQ4LC0yMTI5MDAxMTM3LC00MD
 E2Nzk4MTAsNDk4ODQxNjk5XX0=
