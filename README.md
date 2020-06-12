@@ -36,7 +36,7 @@ Every connector spawns **tasks** which are then distributed across workers in th
 
 #### Standalone Mode 
 - A single edge node on the HDInsight cluster will used to demonstrate  Kafka Connect in standalone mode. 
-- Click to **[Start Lab on Kafka Connect in standalone mode](https://github.com/arnabganguly/archanamehta/blob/master/HDInsightManagedKafkastandalone.md)**
+- Click to **[Start Lab on Kafka Connect in standalone mode](https://github.com/archanamehta/archanamehta/blob/master/HDInsightManagedKafkastandalone.md)**
 
 #### Distributed Mode 
 -  Two edge nodes on an HDInsight cluster will be used to demonstrate  Kafka Connect in distributed mode. 
